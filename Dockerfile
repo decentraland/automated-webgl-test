@@ -54,7 +54,7 @@ RUN apt-get update && \
 COPY package.json /run/package.json
 RUN npm install
 
-WORKDIR /run/node_modules/puppeteer/.local-chromium/linux-800071/chrome-linux/
+WORKDIR /run/node_modules/puppeteer/.local-chromium/linux-818858/chrome-linux/
 RUN chown root:root chrome_sandbox
 RUN chmod 4777 chrome_sandbox
 RUN cp -p chrome_sandbox /usr/local/sbin/chrome-devel-sandbox
